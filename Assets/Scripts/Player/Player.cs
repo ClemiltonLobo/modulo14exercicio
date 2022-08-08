@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D MyRigidbody2D;
 
     [Header("Speed Setup")]
-    public Vector2 friction = new Vector2(-.1f, 0);
+    public Vector2 friction = new Vector2(.1f, 0);
     public float speedRun;
     public float speed;
     public float forceJump = 2;
@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     public Ease ease = Ease.OutBack;
 
     private float _currentSpeed;
-    //private bool _isRunning = false;
 
     public void Update()
     {
